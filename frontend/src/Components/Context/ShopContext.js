@@ -1,6 +1,4 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 export const ShopContext = createContext(null);
 
@@ -52,10 +50,10 @@ const ShopContextProvider = (props) => {
                 .then((response) => response.json())
                 .then((data) => {
                     console.log(data);
-                    toast.success("Product added to cart!");
+                   
                 });
         } else {
-            toast.success("Product added to cart!");
+            // toast.success("Product added to cart!");
         }
     }
 
@@ -75,10 +73,10 @@ const ShopContextProvider = (props) => {
                 .then((response) => response.json())
                 .then((data) => {
                     console.log(data);
-                    toast.success("Product removed from cart!");
+                    // toast.success("Product removed from cart!");
                 });
         } else {
-            toast.success("Product removed from cart!");
+            // toast.success("Product removed from cart!");
         }
     }
 
@@ -110,7 +108,7 @@ const ShopContextProvider = (props) => {
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
-            <ToastContainer />
+         
         </ShopContext.Provider>
     )
 }

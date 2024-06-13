@@ -3,8 +3,7 @@ import './ProductDisplay.css';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { ShopContext } from '../../Context/ShopContext';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const ProductDisplay = (props) => {
     const { product } = props;
@@ -12,7 +11,6 @@ const ProductDisplay = (props) => {
 
     const handleAddToCart = () => {
         addtocart(product.id);
-        toast.success("Added To Cart!");
     };
 
     return (

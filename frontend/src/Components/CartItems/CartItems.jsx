@@ -2,20 +2,18 @@ import React, { useContext } from 'react';
 import './CartItem.css';
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const CartItems = () => {
     const { all_product, getTotalCartAmount, cartItems, removefromcart } = useContext(ShopContext);
 
     const handleRemoveFromCart = (id) => {
         removefromcart(id);
-        toast.success("Item removed from cart");
     };
 
     return (
         <div className='cartitems'>
-            <ToastContainer />
+            
             <div className="cartitems-format-main">
                 <p>Products</p>
                 <p>Title</p>
