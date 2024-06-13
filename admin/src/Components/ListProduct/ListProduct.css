@@ -1,0 +1,97 @@
+/* Container for the whole list product component */
+.list-product {
+    width: calc(100% - 270px); /* Adjusting width to leave space for the sidebar */
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    margin-left: 100px; /* Adjust this value to match the width of your sidebar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+    right: 50px;
+  }
+  
+  /* Header */
+  .list-product h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #333;
+  }
+  
+  /* Header row for product list */
+  .listproduct-format-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    text-align: center;
+  }
+  
+  .listproduct-format-main p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Container for all products */
+  .listproduct-allproducts {
+    margin-top: 10px;
+    max-height: 500px; /* Adjust this height as needed */
+    overflow-y: auto;
+  }
+  
+  /* Each product row */
+  .listproducts-format-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .listproducts-format-main:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Product image */
+  .listproduct-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text columns */
+  .listproducts-format-main p {
+    margin: 0;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Remove button */
+  .litproductremove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .litproductremove-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Horizontal rule */
+  hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  

@@ -1,0 +1,19 @@
+/* toastStyles.css */
+.toast-success {
+    background-color: #4caf50 !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+}
+
+.toast-error {
+    background-color: #f44336 !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+}
+
+.toast-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
