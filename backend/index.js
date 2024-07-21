@@ -21,7 +21,7 @@ if (!fs.existsSync(uploadDir)) {
 
 mongoose.connect("mongodb+srv://gautamjain09687:1234@cluster0.ejuuzk0.mongodb.net/ecommercedb")
   .then(() => {
-    console.log("Connection Success");
+    console.log("Connection Success ho chuka hai ");
   })
   .catch((error) => {
     console.error("Error found in connection:", error);
