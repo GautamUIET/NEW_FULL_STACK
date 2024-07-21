@@ -35,7 +35,7 @@ const AddProduct = () => {
         formData.append('products', image);
 
         try {
-            const uploadResponse = await fetch("http://localhost:4000/upload", {
+            const uploadResponse = await fetch("https://e-commerce-full-stack-1-n87b.onrender.com/upload", {
                 method: "POST",
                 body: formData,
             });
@@ -45,7 +45,7 @@ const AddProduct = () => {
             if (responseData.success) {
                 const updatedProductDetails = { ...productDetails, image: responseData.image_url };
 
-                const addProductResponse = await fetch('http://localhost:4000/addproduct', {
+                const addProductResponse = await fetch('https://e-commerce-full-stack-1-n87b.onrender.com/addproduct', {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',

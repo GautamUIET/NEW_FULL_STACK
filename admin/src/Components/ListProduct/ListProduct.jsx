@@ -7,7 +7,7 @@ const ListProduct = () => {
 
   const fetchInfo = async () => {
     try {
-      const response = await fetch('http://localhost:4000/allproducts');
+      const response = await fetch('https://e-commerce-full-stack-1-n87b.onrender.com/allproducts');
       const data = await response.json();
       setAllProducts(data);
     } catch (error) {
@@ -21,7 +21,7 @@ const ListProduct = () => {
 
   const removeHandler = async (id) => {
     try {
-      const res = await fetch("http://localhost:4000/removeproduct", { // Change https to http
+      const res = await fetch("https://e-commerce-full-stack-1-n87b.onrender.com/removeproduct", { // Change https to http
         method: "POST",
         headers: {
           Accept: "application/json",

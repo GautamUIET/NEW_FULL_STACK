@@ -24,7 +24,7 @@ export const LoginSignup = () => {
 
   const login = async () => {
     try {
-      const response = await fetch("http://localhost:4000/login", {
+      const response = await fetch("https://e-commerce-full-stack-1-n87b.onrender.com/login", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -52,7 +52,7 @@ export const LoginSignup = () => {
   const signup = async () => {
     console.log("in Signup page", formData);
     try {
-      const response = await fetch("http://localhost:4000/signup", {
+      const response = await fetch("https://e-commerce-full-stack-1-n87b.onrender.com/signup", {
         method: "POST",
         headers: {
           Accept: "application/json",
